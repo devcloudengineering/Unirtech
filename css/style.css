@@ -1,0 +1,315 @@
+/* reset */
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+header {
+  background-image: url(../assets/headerBackground.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 1.5rem 1rem 0 0;
+  position: relative;
+}
+
+header .logotipo-unirtech {
+  text-transform: uppercase;
+  text-decoration-line: overline;
+  font-weight: 800;
+}
+
+header .carrusel {
+  height: 60%;
+  width: 55%;
+  position: absolute;
+  right: 0;
+  margin: 2rem 2rem 0 0;
+}
+
+.carousel-item img {
+  width: auto;
+  height: 30rem;
+  border-radius: 50%;
+  object-fit: fill;
+}
+
+.container-logo {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 2rem;
+  justify-content: end;
+  margin-bottom: 0.75rem;
+  list-style: none;
+}
+
+.nav-unirtech .navlist-unirtech {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 3rem;
+  justify-content: end;
+  list-style: none;
+}
+
+.nav-unirtech .navlist-unirtech a,
+.container-logo a {
+  text-decoration: none;
+}
+
+.slidebar {
+  display: none;
+  flex-direction: column;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.349);
+  backdrop-filter: blur(15px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  right: 0;
+  justify-content: start;
+  align-items: start;
+  z-index: 999;
+  list-style: none;
+}
+
+.slidebar li {
+  width: 100%;
+}
+
+.menu-btn {
+  display: none;
+}
+
+/* footer */
+
+footer .foot .container-footer {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem 0 1rem;
+  gap: 1rem;
+  list-style: none;
+}
+
+footer .foot .container-footer li:nth-child(3) {
+  margin-right: auto;
+}
+
+/* bannerIndex */
+.container-banner {
+  display: grid;
+  margin: 0.5rem;
+  border-radius: 2rem;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "img titulo titulo"
+    "img parrafo parrafo"
+    "img parrafo parrafo";
+  & .container-image-banner {
+    grid-area: img;
+  }
+  & .titulo-banner {
+    grid-area: titulo;
+    text-align: center;
+  }
+  & .parrafo-banner {
+    grid-area: parrafo;
+    text-align: center;
+  }
+}
+
+.container-banner .container-image-banner img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.container-banner h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 3rem;
+}
+
+/* containerMainAside */
+.container-main-aside {
+  display: flex;
+  flex-direction: row;
+}
+
+/* AsideIndex */
+.container-aside {
+  flex: 40%;
+  padding: 1rem;
+}
+
+.container-aside h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.container-aside iframe {
+  width: 100%;
+  height: 35%;
+  border-radius: 1rem;
+}
+
+.container-aside .container-card-aside {
+  display: flex;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.container-aside .container-card-aside .item-card-aside img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 10rem;
+  width: 100%;
+  border-top-left-radius: 1rem;
+}
+/* mainIndex */
+.container-main {
+  flex: 60%;
+  display: grid;
+  margin: 0.5rem;
+  place-items: center;
+  grid-template:
+    "p1 p1 img1" 1fr
+    "img2 p2 p2" 1fr
+    "p3 p3 img3" 1fr/
+    1fr 1fr 1fr;
+
+  & .item-image1 {
+    grid-area: img1;
+  }
+  & .parrafo-image1 {
+    grid-area: p1;
+    text-align: center;
+  }
+  & .item-image2 {
+    grid-area: img2;
+  }
+  & .parrafo-image2 {
+    grid-area: p2;
+    text-align: center;
+  }
+  & .item-image3 {
+    grid-area: img3;
+  }
+  & .parrafo-image3 {
+    grid-area: p3;
+    text-align: center;
+  }
+}
+
+.container-main img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+/* mainServicios */
+.main_servicios article {
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  column-gap: 1rem;
+  margin: 1.2rem;
+}
+
+.main_servicios article section,
+p {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.main_servicios article img {
+  max-width: 100%;
+  height: 15rem;
+  object-fit: fill;
+}
+
+.main_servicios article section button {
+  background-color: blueviolet;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  width: 5rem;
+  text-transform: capitalize;
+  box-shadow: 0 5px 10px rgba(19, 0, 13, 0.582);
+  transition: 2ms all ease-out;
+  cursor: pointer;
+}
+
+.main_servicios article section button:hover {
+  transform: scaleY(1.2);
+  color: white;
+}
+/* mainNosotros */
+
+/* mainContacto */
+/* mainAreaVirtual */
+
+/* Media Queries*/
+@media screen and (max-width: 800px) {
+  .HideOnMobile {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .container-main-aside {
+    flex-direction: column;
+  }
+
+  .container-banner {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .container-main {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .main_servicios .main_servicios_tipos {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+  }
+  .main_servicios article img {
+    width: 100%;
+  }
+
+  .container-card-aside {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  @media screen and (max-width: 400px) {
+    .slidebar {
+      width: 100%;
+    }
+  }
+}
