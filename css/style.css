@@ -288,7 +288,13 @@
 /* mainAreaVirtual */
 
 /* Media Queries*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
+  .header__containerlogo__registrarse {
+    color: black;
+  }
+}
+
+@media screen and (max-width: 576px) {
   /* all*/
   .header__nav__navbar__li__a {
     display: none;
