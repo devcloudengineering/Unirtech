@@ -89,20 +89,27 @@
     <main>
         <h2>Contactenos</h2>
         <hr />
-        <a href="#">Administracion</a>
-        <h3>/ Contacto de servicios</h3>
-        <form action="#">
-            <label for="nombre">Nombre:</label><br />
-            <input type="text" id="nombre" name="nombre" required /><br /><br />
-
-            <label for="email">Dirección de Email:</label><br />
-            <input type="email" id="email" name="email" required /><br /><br />
-
-            <label for="asunto">Asunto:</label><br />
-            <input type="text" id="asunto" name="asunto" required /><br /><br />
-
-            <label for="mensaje">Mensaje:</label><br />
-            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br /><br />
+        <div class="admin">
+            <a href="#">Administracion</a>
+            <h3>/ Contacto de servicios</h3>
+        </div>
+        <form class="formulario" action="#">
+            <div class="nombre">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required /><br /><br />
+            </div>
+            <div class="email">
+                <label for="email">Dirección de Email:</label>
+                <input type="email" id="email" name="email" required /><br /><br />
+            </div>
+            <div class="asunto">
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required /><br /><br />
+            </div>
+            <div class="mensaje">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br /><br />
+            </div>
             <button>Enviar</button>
         </form>
     </main>
