@@ -33,7 +33,6 @@
 
 .carousel-item img {
   width: auto;
-  height: 30rem;
   border-radius: 50%;
   object-fit: fill;
 }
