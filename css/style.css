@@ -443,9 +443,54 @@ a {
   text-decoration: none;
 }
 /* Media Queries*/
+@media screen and (max-width: 1250px) {
+  .formulario {
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .formulario .nombre,
+  .email,
+  .asunto,
+  .mensaje {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .formulario br {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header__containerlogo__registrarse {
     color: black;
+  }
+
+  main .testimonios {
+    flex-direction: column;
+  }
+
+  main .container-all {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  main .contenedor-nosotros .slider-nosotros {
+    position: static;
+    height: auto;
+  }
+
+  .containerareavirtual .aside {
+    display: none;
+  }
+  .containerareavirtual .main {
+    flex: 100%;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -489,6 +534,14 @@ a {
   .aside__containercard {
     display: flex;
     flex-flow: column nowrap;
+  }
+
+  /* nosotros */
+
+  main .contenedor-nosotros .slider-nosotros {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   @media screen and (max-width: 400px) {
