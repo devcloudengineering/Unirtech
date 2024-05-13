@@ -111,8 +111,7 @@
   padding: 0.5rem;
 }
 .containerbanner .containerbanner__titulo {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 3rem;
 }
 
@@ -320,13 +319,14 @@
 }
 
 /* mainNosotros */
-main .nosotros {
+img {
   width: 25rem;
   height: 20rem;
   margin-top: 2.5rem;
   border-radius: 10%;
 }
-main img {
+
+main .nosotros {
   width: 25rem;
   height: 20rem;
   margin-top: 2.5rem;
