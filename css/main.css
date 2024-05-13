@@ -111,7 +111,8 @@
   padding: 0.5rem;
 }
 .containerbanner .containerbanner__titulo {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 3rem;
 }
 
@@ -446,7 +447,7 @@ main .admin a {
 .formulario .mensaje {
   margin-bottom: 1rem;
 }
-.formulario button {
+.formulario .button {
   background-color: blueviolet;
   padding: 0.5rem;
   border-radius: 1rem;
@@ -457,7 +458,7 @@ main .admin a {
   cursor: pointer;
   margin-top: 2rem;
 }
-.formulario button:hover {
+.formulario .button:hover {
   transform: scale(1.1);
   color: white;
 }

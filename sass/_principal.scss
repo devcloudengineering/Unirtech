@@ -354,17 +354,10 @@ main {
   .mensaje {
     margin-bottom: $rem-1;
   }
-  button {
-    background-color: blueviolet;
-    padding: $rem-05;
-    border-radius: $rem-1;
-    width: 7rem;
-    text-transform: capitalize;
-    box-shadow: 0 5px 10px rgba(19, 0, 13, 0.582);
-    transition: transform 0.2s ease-out;
-    cursor: pointer;
-    margin-top:$rem-2;
-    &:hover {
+  .button {
+    @each $llave, $valor in $boton {
+      #{$llave}: $valor;
+    }&:hover {
       transform: scale(1.1);
       color: white;
     }
