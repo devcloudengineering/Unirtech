@@ -1,8 +1,8 @@
 /* bannerIndex */
 .containerbanner {
   display: grid;
-  margin: 0.5rem;
-  border-radius: 2rem;
+  margin: $rem-05;
+  border-radius:$rem-2;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -27,10 +27,9 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: 100%;
-        width: 100%;
-        border-radius: 1rem;
-        padding: 0.5rem;
+        @include sizes($allporcent, $allporcent);
+        border-radius: $rem-1;
+        padding: $rem-05;
       }
     }
     &__titulo {
@@ -46,9 +45,9 @@
   display: flex;
   flex-direction: row;
   &__main {
-    flex: 60%;
+    flex: $porcent-60;
     display: grid;
-    margin: 0.5rem;
+    margin: $rem-05;
     place-items: center;
     grid-template:
       "p1 p1 img1" 1fr
@@ -81,58 +80,53 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      height: 100%;
-      width: 100%;
-      border-radius: 1rem;
-      padding: 0.5rem;
+      @include sizes($allporcent, $allporcent);
+      border-radius: $rem-1;
+      padding: $rem-05;
     }
     &__img2 {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      height: 100%;
-      width: 100%;
-      border-radius: 1rem;
-      padding: 0.5rem;
+      @include sizes($allporcent, $allporcent);
+      border-radius: $rem-1;
+      padding: $rem-05;
     }
     &__img3 {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      height: 100%;
-      width: 100%;
-      border-radius: 1rem;
-      padding: 0.5rem;
+      @include sizes($allporcent, $allporcent);
+      border-radius: $rem-1;
+      padding: $rem-05;
     }
   }
 }
 
 /* AsideIndex */
 .aside {
-  flex: 40%;
-  padding: 1rem;
+  flex: $porcent-40;
+  padding: $rem-1;
   .aside {
     &__titulo {
       text-align: center;
-      margin-bottom: 1rem;
+      margin-bottom: $rem-1;
     }
     &__iframe {
-      width: 100%;
-      height: 35%;
-      border-radius: 1rem;
+      @include sizes($allporcent, $porcent-35);
+      border-radius: $rem-1;
     }
     &__containercard {
       display: flex;
-      padding-top: 1rem;
+      padding-top: $rem-1;
       text-align: center;
       &__item {
         &__img {
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
-          height: 10rem;
-          width: 100%;
-          border-top-left-radius: 1rem;
+          @include sizes($allporcent, $rem-10);
+          border-top-left-radius: $rem-1;
         }
       }
     }
@@ -142,114 +136,106 @@
 /* mainServicios */
 .main {
   .main__servicios {
-    display: flex;
-    justify-content: center;
-    flex-flow: row nowrap;
-    column-gap: 1rem;
+    @include flex-row-center;
+    column-gap: $rem-1;
     margin: 1.2rem;
     &__uno {
-      display: flex;
-      flex-flow: column nowrap;
+      @include flex-column-nowrap;
       justify-content: center;
       align-items: center;
-      gap: 1rem;
+      gap: $rem-1;
       text-align: center;
     }
     &__dos {
-      display: flex;
-      flex-flow: column nowrap;
+      @include flex-column-nowrap;
       justify-content: center;
       align-items: center;
-      gap: 1rem;
+      gap: $rem-1;
       text-align: center;
     }
     &__tres {
-      display: flex;
-      flex-flow: column nowrap;
+      @include flex-column-nowrap;
       justify-content: center;
       align-items: center;
-      gap: 1rem;
+      gap: $rem-1;
       text-align: center;
     }
     &__uno__parrafo {
-      display: flex;
-      flex-flow: column nowrap;
+      @include flex-column-nowrap;
       justify-content: center;
       align-items: center;
-      gap: 1rem;
+      gap: $rem-1;
       text-align: center;
     }
     &__dos__parrafo {
-      display: flex;
-      flex-flow: column nowrap;
+      @include flex-column-nowrap;
       justify-content: center;
       align-items: center;
-      gap: 1rem;
+      gap: $rem-1;
       text-align: center;
     }
     &__tres__parrafo {
-      display: flex;
-      flex-flow: column nowrap;
+      @include flex-column-nowrap;
       justify-content: center;
       align-items: center;
-      gap: 1rem;
+      gap: $rem-1;
       text-align: center;
     }
     .main__servicios {
       &__uno__img {
-        max-width: 100%;
-        height: 15rem;
+        max-width: $allporcent;
+        height: $rem-15;
         object-fit: fill;
       }
       &__dos__img {
-        max-width: 100%;
-        height: 15rem;
+        max-width: $allporcent;
+        height: $rem-15;
         object-fit: fill;
       }
       &__tres__img {
-        max-width: 100%;
-        height: 15rem;
+        max-width: $allporcent;
+        height: $rem-15;
         object-fit: fill;
       }
       &__uno__button {
         background-color: blueviolet;
-        padding: 0.5rem;
-        border-radius: 1rem;
-        width: 5rem;
+        padding: $rem-05;
+        border-radius: $rem-1;
+        width:$rem-5;
         text-transform: capitalize;
         box-shadow: 0 5px 10px rgba(19, 0, 13, 0.582);
         transition: 2ms all ease-out;
         cursor: pointer;
         &:hover {
-          transform: scaleY(1.2);
+          transform: scaleY($scale-y);
           color: white;
         }
       }
       &__dos__button {
         background-color: blueviolet;
-        padding: 0.5rem;
-        border-radius: 1rem;
-        width: 5rem;
+        padding: $rem-05;
+        border-radius: $rem-1;
+        width:$rem-5;
         text-transform: capitalize;
         box-shadow: 0 5px 10px rgba(19, 0, 13, 0.582);
         transition: 2ms all ease-out;
         cursor: pointer;
         &:hover {
-          transform: scaleY(1.2);
+          transform: scaleY($scale-y);
           color: white;
         }
       }
       &__tres__button {
         background-color: blueviolet;
-        padding: 0.5rem;
-        border-radius: 1rem;
-        width: 5rem;
+        padding: $rem-05;
+        border-radius: $rem-1;
+        width:$rem-5;
         text-transform: capitalize;
         box-shadow: 0 5px 10px rgba(19, 0, 13, 0.582);
         transition: 2ms all ease-out;
         cursor: pointer;
         &:hover {
-          transform: scaleY(1.2);
+          transform: scaleY($scale-y);
           color: white;
         }
       }
@@ -259,32 +245,29 @@
 
 /* mainNosotros */
 img {
-  width: 25rem;
-  height: 20rem;
+  @include sizes(25rem, 20rem);
   margin-top: 2.5rem;
-  border-radius: 10%;
+  border-radius: $porcent-10;
 }
 main {
   .nosotros {
-    width: 25rem;
-    height: 20rem;
+    @include sizes(25rem, 20rem);
     margin-top: 2.5rem;
-    border-radius: 10%;
+    border-radius: $porcent-10;
   }
   .contenedor-nosotros {
     .slider-nosotros {
       display: inline-flex;
       flex-flow: row nowrap;
-      gap: 2rem;
-      height: 150px;
+      gap:$rem-2;
+      @include sizes(auto, 150px);
       background-color: rgba(43, 226, 113, 0.514);
-      width: auto;
       position: relative;
-      top: 15rem;
-      right: 5rem;
+      top: $rem-15;
+      right:$rem-5;
       z-index: 1;
-      padding: 0.5rem;
-      border-radius: 5%;
+      padding: $rem-05;
+      border-radius: $porcent-5;
       .paes {
         color: black;
         text-decoration: overline;
@@ -293,32 +276,27 @@ main {
     }
   }
   .testimonios {
-    display: flex;
-    flex-direction: row;
+    @include flex-row-center;
     gap: 2.5rem;
-    margin: 4rem 1rem 0 1rem;
-    justify-content: center;
+    margin: 4rem $rem-1 0 $rem-1;
     align-items: baseline;
     .testimonio {
       &1 {
-        display: flex;
-        flex-flow: column nowrap;
+        @include flex-column-nowrap;
         justify-content: center;
         align-items: center;
         text-align: center;
         gap: 2.5rem;
       }
       &2 {
-        display: flex;
-        flex-flow: column nowrap;
+        @include flex-column-nowrap;
         justify-content: center;
         align-items: center;
         text-align: center;
         gap: 2.5rem;
       }
       &3 {
-        display: flex;
-        flex-flow: column nowrap;
+        @include flex-column-nowrap;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -326,23 +304,21 @@ main {
       }
     }
     .p {
-      display: flex;
-      flex-flow: column nowrap;
+      @include flex-column-nowrap;
       justify-content: center;
       align-items: center;
       text-align: center;
       gap: 2.5rem;
     }
     img {
-      max-width: 100%;
+      max-width: $allporcent;
       object-fit: fill;
-      border-radius: 10%;
+      border-radius: $porcent-10;
     }
   }
   .container-all {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+    @include flex-row-center;
+    gap:$rem-2;
   }
 }
 
@@ -350,8 +326,8 @@ main {
 main {
   .admin {
     display: flex;
-    column-gap: 1rem;
-    margin-left: 1rem;
+    column-gap: $rem-1;
+    margin-left: $rem-1;
     align-items: baseline;
     a {
       text-decoration: none;
@@ -360,35 +336,34 @@ main {
 }
 
 .formulario {
-  display: flex;
-  justify-content: center;
+  @include flex-row-center;
   align-items: center;
   margin: auto;
-  padding: 5%;
+  padding: $porcent-5;
   background-color: rgba(43, 226, 113, 0.514);
   border-radius: 1.5rem;
   .nombre {
-    margin-bottom: 1rem;
+    margin-bottom: $rem-1;
   }
   .email {
-    margin-bottom: 1rem;
+    margin-bottom: $rem-1;
   }
   .asunto {
-    margin-bottom: 1rem;
+    margin-bottom: $rem-1;
   }
   .mensaje {
-    margin-bottom: 1rem;
+    margin-bottom: $rem-1;
   }
   button {
     background-color: blueviolet;
-    padding: 0.5rem;
-    border-radius: 1rem;
+    padding: $rem-05;
+    border-radius: $rem-1;
     width: 7rem;
     text-transform: capitalize;
     box-shadow: 0 5px 10px rgba(19, 0, 13, 0.582);
     transition: transform 0.2s ease-out;
     cursor: pointer;
-    margin-top: 2rem;
+    margin-top:$rem-2;
     &:hover {
       transform: scale(1.1);
       color: white;
@@ -402,48 +377,46 @@ main {
   margin: 3rem 0 0 3rem;
   height: 100vh;
   .main {
-    flex: 50%;
+    flex: $porcent-50;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap:$rem-2;
     form {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: $rem-1;
       .checkbox {
         display: flex;
         justify-content: baseline;
         align-items: baseline;
-        gap: 0.5rem;
+        gap: $rem-05;
       }
     }
     .container-registrarse {
       display: flex;
       justify-content: baseline;
       align-items: baseline;
-      gap: 1rem;
+      gap: $rem-1;
       text-decoration: none;
     }
     a {
       display: flex;
       justify-content: baseline;
       align-items: baseline;
-      gap: 1rem;
+      gap: $rem-1;
       text-decoration: none;
     }
   }
   .aside {
-    flex: 50%;
+    flex: $porcent-50;
     background-image: url("../assets/areaVirtual.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: row;
+    @include flex-row-center;
     align-items: baseline;
-    justify-content: center;
-    gap: 1rem;
-    border-radius: 5%;
+    gap: $rem-1;
+    border-radius: $porcent-5;
     p {
       color: white;
       text-decoration: none;

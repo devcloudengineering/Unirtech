@@ -105,8 +105,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100%;
   width: 100%;
+  height: 100%;
   border-radius: 1rem;
   padding: 0.5rem;
 }
@@ -152,8 +152,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100%;
   width: 100%;
+  height: 100%;
   border-radius: 1rem;
   padding: 0.5rem;
 }
@@ -161,8 +161,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100%;
   width: 100%;
+  height: 100%;
   border-radius: 1rem;
   padding: 0.5rem;
 }
@@ -170,8 +170,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100%;
   width: 100%;
+  height: 100%;
   border-radius: 1rem;
   padding: 0.5rem;
 }
@@ -199,22 +199,23 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 10rem;
   width: 100%;
+  height: 10rem;
   border-top-left-radius: 1rem;
 }
 
 /* mainServicios */
 .main .main__servicios {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  flex-flow: row nowrap;
   column-gap: 1rem;
   margin: 1.2rem;
 }
 .main .main__servicios__uno {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -222,7 +223,8 @@
 }
 .main .main__servicios__dos {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -230,7 +232,8 @@
 }
 .main .main__servicios__tres {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -238,7 +241,8 @@
 }
 .main .main__servicios__uno__parrafo {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -246,7 +250,8 @@
 }
 .main .main__servicios__dos__parrafo {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -254,7 +259,8 @@
 }
 .main .main__servicios__tres__parrafo {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -336,9 +342,9 @@ main .contenedor-nosotros .slider-nosotros {
   display: inline-flex;
   flex-flow: row nowrap;
   gap: 2rem;
+  width: auto;
   height: 150px;
   background-color: rgba(43, 226, 113, 0.514);
-  width: auto;
   position: relative;
   top: 15rem;
   right: 5rem;
@@ -354,14 +360,15 @@ main .contenedor-nosotros .slider-nosotros .paes {
 main .testimonios {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 2.5rem;
   margin: 4rem 1rem 0 1rem;
-  justify-content: center;
   align-items: baseline;
 }
 main .testimonios .testimonio1 {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -369,7 +376,8 @@ main .testimonios .testimonio1 {
 }
 main .testimonios .testimonio2 {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -377,7 +385,8 @@ main .testimonios .testimonio2 {
 }
 main .testimonios .testimonio3 {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -385,7 +394,8 @@ main .testimonios .testimonio3 {
 }
 main .testimonios .p {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -398,6 +408,7 @@ main .testimonios img {
 }
 main .container-all {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   gap: 2rem;
 }
@@ -415,6 +426,7 @@ main .admin a {
 
 .formulario {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -495,8 +507,8 @@ main .admin a {
   background-size: cover;
   display: flex;
   flex-direction: row;
-  align-items: baseline;
   justify-content: center;
+  align-items: baseline;
   gap: 1rem;
   border-radius: 5%;
 }
