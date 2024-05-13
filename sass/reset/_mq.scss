@@ -1,0 +1,123 @@
+/* Media Queries*/
+@media screen and (max-width: 1250px) {
+  .formulario {
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    .nombre {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+    .email {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+    .asunto {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+    .mensaje {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+    br {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    .testimonios {
+      flex-direction: column;
+    }
+    .container-all {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+    .contenedor-nosotros {
+      .slider-nosotros {
+        position: static;
+        height: auto;
+      }
+    }
+  }
+  .containerareavirtual {
+    .aside {
+      display: none;
+    }
+    .main {
+      flex: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .header__containerlogo__registrarse {
+    color: black;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .header {
+    &__nav__navbar__li__a {
+      display: none;
+    }
+    &__containerlogo__ul__btn {
+      display: block;
+    }
+  }
+  .containermainaside {
+    flex-direction: column;
+    &__main {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+  }
+
+  .containerbanner {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .main {
+    .main__servicios {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 1rem;
+      .main__servicios__uno__img {
+        width: 100%;
+      }
+      .main__servicios__dos__img {
+        width: 100%;
+      }
+      .main__servicios__tres__img {
+        width: 100%;
+      }
+    }
+  }
+
+  main {
+    .contenedor-nosotros {
+      .slider-nosotros {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .aside__containercard {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  @media screen and (max-width: 400px) {
+    /* all */
+    .header__nav__slidebar {
+      width: 100%;
+    }
+  }
+}

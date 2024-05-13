@@ -1,0 +1,15 @@
+//resets
+@import './reset/configuracion';
+@import './reset/variables';
+
+//header
+@import 'header';
+
+//main
+@import 'principal';
+
+//footer
+@import 'footer';
+
+//MQ
+@import './reset/mq';
